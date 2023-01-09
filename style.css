@@ -24,6 +24,10 @@ main {
 
 }
 
+h1{
+    color: #fffcf5;
+}
+
 .intro{
     font-family: Arial, Helvetica, sans-serif;
     width:700px;
@@ -34,12 +38,13 @@ main {
 .divideIn2{
     display: flex;
     flex-direction: row-reverse;
-    padding: 0;
-    margin: auto;
-    width: 80%;
-    display: flex;
-    align-items: center;
     justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 90px;
+    padding: 0;
+    width: 80%;
 
 }
 
@@ -48,6 +53,10 @@ main {
     padding: 10px 20px;
     width:400px;
     border-radius: 25px
+}
+
+h3{
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #height{
@@ -61,9 +70,20 @@ main {
     margin-top: 10px;
 }
 
+label{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="number"]{
+    border-radius: 25px;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 #submit{
-    width: 150px;
-    height: 25px;
+    width: 120px;
+    height: 35px;
     margin-top: 10px;
     box-shadow: 0px 3px 5px 0px #828282;
 	background:linear-gradient(to bottom, #FFF 5%, #d1d1d1 100%);
@@ -89,11 +109,12 @@ main {
 }
 
 #result{
-
     margin-top: 10px;
     margin-bottom: 10px;
-    font-size: 35px;
-    color: #005367;
+    line-height: 35px;
+    height: 35px;
+    font-size: 30px;
+    color: #004557;
 }
 
 #weightGuide{
@@ -101,14 +122,28 @@ main {
     font-size: smaller;
 }
 
-table, th, tr, td{
-    border: 1px solid black;
+table,td  {
+    border-radius: 10px;
     border-collapse: collapse;
+    border-top: #bcd7e0 solid;
     padding: 5px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
+    text-align: center;
+    overflow-x:auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffcf5;
 }
+
+th{
+    border-bottom: #bcd7e0 solid;
+    border-radius: 25px;
+    padding: 10px;
+    height: 20px;
+}
+
+
 
 .note{
     font-family:Arial, Helvetica, sans-serif;

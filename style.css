@@ -1,0 +1,129 @@
+html{
+    background-color: #fffcf5;
+    
+}
+
+header{
+    display: block;
+    align-items: center;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #579BB1;
+    padding: 5px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+main {
+    display: block;
+    align-items: center;
+    text-align:center;
+
+}
+
+.intro{
+    font-family: Arial, Helvetica, sans-serif;
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.divideIn2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 0;
+    margin: auto;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#calcContainer{
+    background-color: #bcd7e0;
+    padding: 10px 20px;
+    width:400px;
+    border-radius: 25px
+}
+
+#height{
+    width: 150px;
+    height: 25px;
+}
+
+#weight{
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+}
+
+#submit{
+    width: 150px;
+    height: 25px;
+    margin-top: 10px;
+    box-shadow: 0px 3px 5px 0px #828282;
+	background:linear-gradient(to bottom, #FFF 5%, #d1d1d1 100%);
+	border-radius:42px;
+	border:1px solid #c7c7c7;
+	cursor:pointer;
+	color:#276878;
+	font-family:Arial;
+	font-size:17px;
+	padding:0px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #c6caf7;
+}
+
+#submit:hover{
+    background:linear-gradient(to bottom, #d1d1d1 5%, #FFF 100%);
+	background-color:#F8F4EA;
+}
+
+#submit:active{
+    position:relative;
+	top:1px;
+}
+
+#result{
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 35px;
+    color: #005367;
+}
+
+#weightGuide{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: smaller;
+}
+
+table, th, tr, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.note{
+    font-family:Arial, Helvetica, sans-serif;
+    width:400px;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    padding: 20px 0px;
+    align-items: center;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    background-color: #e8e1d5;
+}

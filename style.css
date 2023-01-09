@@ -1,6 +1,11 @@
 html{
     background-color: #fffcf5;
-    
+    margin: 0px;
+    padding: 0px;
+    min-height: 100vh;
+    max-height: 100vh;
+    display:flex; 
+    flex-direction:column;
 }
 
 header{
@@ -10,6 +15,7 @@ header{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #579BB1;
     padding: 5px;
+    position: relative;
 }
 
 body{
@@ -21,7 +27,6 @@ main {
     display: block;
     align-items: center;
     text-align:center;
-
 }
 
 h1{
@@ -45,7 +50,7 @@ h1{
     margin-top: 90px;
     padding: 0;
     width: 80%;
-
+    flex-wrap: wrap;
 }
 
 #calcContainer{
@@ -117,13 +122,9 @@ input[type="number"]{
     color: #004557;
 }
 
-#weightGuide{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: smaller;
-}
-
 table,td  {
     border-radius: 10px;
+    font-size: small;
     border-collapse: collapse;
     border-top: #bcd7e0 solid;
     padding: 5px;
@@ -143,22 +144,18 @@ th{
     height: 20px;
 }
 
-
-
 .note{
     font-family:Arial, Helvetica, sans-serif;
     width:400px;
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 50px;
-    padding: 20px 0px;
-    align-items: center;
     text-align: center;
+    padding: 20px 0px;
     font-family:Arial, Helvetica, sans-serif;
     font-weight: bolder;
     background-color: #e8e1d5;
+    margin-top:47px;
+    margin-bottom:0px;
 }

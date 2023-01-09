@@ -1,7 +1,6 @@
 # BMI-Calculator
-Repository for a BMI Calculator made with HTML, CSS and JavaScript!
 
-The project is part of the "Front End Developer - HTML CSS Bootstrap JavaScript React" course avilable in Udemy!
+Repository for a BMI Calculator made with HTML, CSS and JavaScript!
 
 [Link para acessar](https://geraldopmj.github.io/BMI-Calculator/)
 

@@ -5,17 +5,17 @@ The project is part of the "Front End Developer - HTML CSS Bootstrap JavaScript 
 
 [Link para acessar](https://geraldopmj.github.io/BMI-Calculator/)
 
-# Tecnologias utilizadas:
+# Technology used:
 
 - HTML
 - CSS
 - JavaScript
 - Git e Github
 
-## Contato
+## Contact:
 
 geraldo.pmj@gmail.com
 
-## Preview
+## Preview:
 
 ![preview](./preview.png)

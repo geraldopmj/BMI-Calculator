@@ -3,7 +3,7 @@
 Repository for a responsive BMI Calculator made with HTML, CSS and JavaScript!
 The color of the result changes based on value!
 
-[Link para acessar](https://geraldopmj.github.io/BMI-Calculator/)
+[Visualize](https://geraldopmj.github.io/BMI-Calculator/)
 
 # Technology used:
 

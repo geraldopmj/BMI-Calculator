@@ -112,14 +112,17 @@ input[type="number"]{
 	padding:0px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #c6caf7;
+    transition: background-color 1s;
 }
 
 #submit:hover{
+    transition: background-color, 0.8s;
+    color:#782727;
     background:linear-gradient(to bottom, #d1d1d1 5%, #FFF 100%);
-	background-color:#F8F4EA;
 }
 
 #submit:active{
+    transition: 0.8s;
     position:relative;
 	top:1px;
 }
@@ -130,9 +133,10 @@ input[type="number"]{
     line-height: 35px;
     height: 35px;
     font-size: 30px;
-    color: #004557;
+    color: #bcd7e0;
     font-family: 'Merriweather';
-    text-shadow: 0px 0px 2px #000000;
+    text-shadow: 0px 0px 1px #000000;
+    transition: 1s;
 }
 
 table,td  {

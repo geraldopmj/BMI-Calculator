@@ -1,6 +1,7 @@
-html, body{
-    display:flex; 
-    flex-direction:column;
+html,
+body {
+    display: flex;
+    flex-direction: column;
     background-color: #fffcf5;
     margin: 0px;
     padding: 0px;
@@ -8,7 +9,7 @@ html, body{
     max-height: 100vh;
 }
 
-header{
+header {
     display: block;
     align-items: center;
     text-align: center;
@@ -24,30 +25,30 @@ main {
     text-align: center;
 }
 
-h1{
+h1 {
     color: #fffcf5;
     padding: 30px;
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
 }
 
-p{
+p {
     text-align: center;
 }
 
-.justify{
+.justify {
     text-align: justify;
     text-indent: 30px;
 }
 
-.intro{
+.intro {
     font-family: 'Montserrat';
-    width:700px;
+    width: 700px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.divideIn2{
+.divideIn2 {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
@@ -60,74 +61,74 @@ p{
     flex-wrap: wrap;
 }
 
-#calcContainer{
+#calcContainer {
     background-color: #bcd7e0;
     padding: 10px 20px;
-    width:400px;
+    width: 400px;
     border-radius: 25px
 }
 
-h2{
+h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
-h3{
+h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-#height{
+#height {
     width: 150px;
     height: 25px;
 }
 
-#weight{
+#weight {
     width: 150px;
     height: 25px;
     margin-top: 10px;
 }
 
-label{
+label {
     font-family: 'Montserrat';
 }
 
-input[type="number"]{
+input[type="number"] {
     border-radius: 25px;
     margin-left: 10px;
     text-align: center;
     font-family: 'Montserrat';
 }
 
-#submit{
+#submit {
     width: 120px;
     height: 35px;
     margin-top: 10px;
     box-shadow: 0px 3px 5px 0px #828282;
-	background:linear-gradient(to bottom, #FFF 5%, #d1d1d1 100%);
-	border-radius:42px;
-	border:1px solid #c7c7c7;
-	cursor:pointer;
-	color:#276878;
-	font-family:Arial;
-	font-size:17px;
-	padding:0px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #c6caf7;
+    background: linear-gradient(to bottom, #FFF 5%, #d1d1d1 100%);
+    border-radius: 42px;
+    border: 1px solid #c7c7c7;
+    cursor: pointer;
+    color: #276878;
+    font-family: Arial;
+    font-size: 17px;
+    padding: 0px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #c6caf7;
     transition: background-color 1s;
 }
 
-#submit:hover{
+#submit:hover {
     transition: background-color, 0.8s;
-    color:#782727;
-    background:linear-gradient(to bottom, #d1d1d1 5%, #FFF 100%);
+    color: #782727;
+    background: linear-gradient(to bottom, #d1d1d1 5%, #FFF 100%);
 }
 
-#submit:active{
+#submit:active {
     transition: 0.8s;
-    position:relative;
-	top:1px;
+    position: relative;
+    top: 1px;
 }
 
-#result{
+#result {
     margin-top: 10px;
     margin-bottom: 10px;
     line-height: 35px;
@@ -139,7 +140,8 @@ input[type="number"]{
     transition: 1s;
 }
 
-table,td  {
+table,
+td {
     border-radius: 10px;
     font-size: small;
     border-collapse: collapse;
@@ -149,12 +151,12 @@ table,td  {
     margin-right: auto;
     margin-bottom: 20px;
     text-align: center;
-    overflow-x:auto;
+    overflow-x: auto;
     font-family: 'Montserrat';
     background-color: #fffcf5;
 }
 
-th{
+th {
     border-bottom: #bcd7e0 solid;
     border-radius: 25px;
     padding: 10px;
@@ -162,17 +164,17 @@ th{
     font-family: 'Montserrat', sans-serif;
 }
 
-.note{
+.note {
     font-family: 'Montserrat';
-    width:400px;
+    width: 400px;
 }
 
-#warning{
+#warning {
     color: red;
     font-family: 'Montserrat', sans-serif;
 }
 
-footer{
+footer {
     padding: 20px 20px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;

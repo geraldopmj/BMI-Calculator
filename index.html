@@ -1,76 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Body Mass Index Calculator</title>
-    <link rel="stylesheet" href="./style.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <header>
-        <h1>Body Mass Index Calculator</h1>
+      <h1>Body Mass Index Calculator</h1>
     </header>
-    
+
     <main>
-        <div class="divideIn2">
-            <div id="calcContainer">
-                <h3>BMI Calculator</h3>
-                    <label for="height">Height (cm):</label><input type="number" id="height"><br/>
-                    <label for="weight">Weight (kg):</label><input type="number" id="weight"><br/>
-                    <input type="submit" id="submit" value="Calculate" <br/><br/>
-                <div id="result"></div>
-                
-                <div id="weightGuide">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th colspan="2">BMI Table</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class = "cuidado">Underweight</td> <td>below 18,5</td>
-                            </tr>
-                            <tr>
-                                <td class = "peso-normal">Normal weight</td> <td>between 18,5 and 24,9</td>
-                            </tr>
-                            <tr>
-                                <td class = "over">Overweight</td> <td>between 25,0 and 29,9</td>
-                            </tr>
-                            <tr>
-                                <td class = "over-one">Obesity</td> <td>between 30,0 and 39,9</td>
-                            </tr>
-                            <tr>
-                                <td class = "over-two">Dangerous Obesity</td> <td>greater than 40,0</td>
-                            </tr>
-                        </tbody>
+      <div class="divideIn2">
+        <div id="calcContainer">
+          <h3>BMI Calculator</h3>
+          <label for="height">Height (cm):</label
+          ><input type="number" id="height" /><br />
+          <label for="weight">Weight (kg):</label
+          ><input type="number" id="weight" /><br />
+          <input type="submit" id="submit" value="Calculate" <br /><br />
+          <div id="result"></div>
 
-                    </table>
-                </div>
-            </div>
-
-            <div class="note">
-                <h2>What is Body Mass Index:</h2>
-                <p class="justify">BMI or Body Mass Index is a parameter used by the World Health Organization to calculate the ideal weight of each person. The index is calculated by dividing the person's weight by the person's height squared.</p>
-                
-                <p class="justify">Want to find out your BMI? Enter your weight and height in the calculator and compare with the indexes in the table.</p>
-
-                <p class="justify"> <b id="warning">WARNING:</b> BMI is not the only aspect to be observed to determine obesity. This is because the weight composition can be affected by the person's bone structures, which means that a BMI above the ideal range does not necessarily mean excess fat.</p>
-
-                <p class="justify">However, the index is quite useful in detecting a weight below or above the recommended one. Thus, it can be used as a personal compass to lead to a healthier life. In any case you should consult a nutritionist!</p>
-            </div>
+          <div id="weightGuide">
+            <table>
+              <thead>
+                <tr>
+                  <th colspan="2">BMI Table</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cuidado">Underweight</td>
+                  <td>below 18,5</td>
+                </tr>
+                <tr>
+                  <td class="peso-normal">Normal weight</td>
+                  <td>between 18,5 and 24,9</td>
+                </tr>
+                <tr>
+                  <td class="over">Overweight</td>
+                  <td>between 25,0 and 29,9</td>
+                </tr>
+                <tr>
+                  <td class="over-one">Obesity</td>
+                  <td>between 30,0 and 39,9</td>
+                </tr>
+                <tr>
+                  <td class="over-two">Dangerous Obesity</td>
+                  <td>greater than 40,0</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+
+        <div class="note">
+          <h2>What is Body Mass Index:</h2>
+          <p class="justify">
+            BMI or Body Mass Index is a parameter used by the World Health
+            Organization to calculate the ideal weight of each person. The index
+            is calculated by dividing the person's weight by the person's height
+            squared.
+          </p>
+
+          <p class="justify">
+            Want to find out your BMI? Enter your weight and height in the
+            calculator and compare with the indexes in the table.
+          </p>
+
+          <p class="justify">
+            <b id="warning">WARNING:</b> BMI is not the only aspect to be
+            observed to determine obesity. This is because the weight
+            composition can be affected by the person's bone structures, which
+            means that a BMI above the ideal range does not necessarily mean
+            excess fat.
+          </p>
+
+          <p class="justify">
+            However, the index is quite useful in detecting a weight below or
+            above the recommended one. Thus, it can be used as a personal
+            compass to lead to a healthier life. In any case you should consult
+            a nutritionist!
+          </p>
+        </div>
+      </div>
     </main>
-    
-    
-</body>
-<footer>
+  </body>
+  <footer>
     <p>Always check you health status with a doctor!</p>
-</footer>
-<script src="./script.js"></script>
+  </footer>
+  <script src="./script.js"></script>
 </html>

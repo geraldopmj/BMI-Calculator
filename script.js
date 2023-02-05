@@ -1,30 +1,49 @@
-document.getElementById("submit").addEventListener("click", bmiCalculator); // listen to click from button submit and activate function bmiCalculator.
-function bmiCalculator() {
-  var height = parseInt(document.getElementById("height").value); //get the height value from field
-  var weight = parseFloat(document.getElementById("weight").value); //get the weight value from field
-  var newHeight = parseFloat(height / 100); //parses a value as a string and returns the first number.
-  var bmi = weight / (newHeight * newHeight); //calculate the BMI
-  bmi = bmi.toFixed(1); //method rounds the string to a specified number of decimals specified inside parenthesis.
+const submitButton = document.getElementById("submit");
+submitButton.addEventListener("click", calculateBMI);
 
-  //sets the HTML markup contained within the element(result).
-  if (bmi > 0) {
-    document.getElementById("result").innerHTML = "BMI: " + bmi;
-  } else {
-    document.getElementById("result").innerHTML = "Fill out above!";
+function calculateBMI() {
+  const heightInput = document.getElementById("height");
+  const height = parseInt(heightInput.value);
+  if (isNaN(height)) {
+    return displayError("Invalid height input");
   }
 
-  //Condition to change the result color based on values!
+  const weightInput = document.getElementById("weight");
+  const weight = parseFloat(weightInput.value);
+  if (isNaN(weight)) {
+    return displayError("Invalid weight input");
+  }
+
+  const newHeight = height / 100;
+  const bmi = weight / (newHeight * newHeight);
+  const roundedBMI = bmi.toFixed(1);
+
+  const bmiResult = `BMI: ${roundedBMI}`;
+  displayResult(bmiResult, getBMIColor(bmi));
+}
+
+function displayError(message) {
+  const resultElement = document.getElementById("result");
+  resultElement.innerHTML = message;
+  resultElement.style.color = "red";
+}
+
+function displayResult(message, color) {
+  const resultElement = document.getElementById("result");
+  resultElement.innerHTML = message;
+  resultElement.style.color = color;
+}
+
+function getBMIColor(bmi) {
   if (bmi <= 18.5) {
-    document.getElementById("result").style.color = "blue";
-  } else if (bmi > 18.5 && bmi <= 24.9) {
-    document.getElementById("result").style.color = "green";
-  } else if (bmi >= 24.9 && bmi <= 29.9) {
-    document.getElementById("result").style.color = "yellow";
-  } else if (bmi >= 29.9 && bmi <= 40) {
-    document.getElementById("result").style.color = "orange";
-  } else if (bmi > 40) {
-    document.getElementById("result").style.color = "red";
+    return "blue";
+  } else if (bmi <= 24.9) {
+    return "green";
+  } else if (bmi <= 29.9) {
+    return "yellow";
+  } else if (bmi <= 40) {
+    return "orange";
   } else {
-    document.getElementById("result").style.color = "black";
+    return "red";
   }
 }
